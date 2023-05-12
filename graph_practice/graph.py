@@ -8,6 +8,16 @@ class Graph:
 	"""
 	Simple implementation of a Directed Graph
 	Only allows positive edge weights for simplicity
+	Adjecentcy list representation stored as a dict of dicts
+
+	Ex:
+	d = {
+		 "A": {"B": 1, "C":2},
+	     "B": {"C": 3},
+	     "C": {}
+	    }
+
+	Node A has edges of weights 1 and 2 to B and C, respectively. B has one outgoing edge to C and C has none.
 
 	"""
 
